@@ -6,7 +6,7 @@ import cors from 'cors';
 // ==========================================
 // 1. BASE DE DADOS EM MEMÓRIA (COMPARTILHADA)
 // ==========================================
-const mockPosts = Array.from({ length: 100 }, (_, i) => ({
+const mockPosts = Array.from({ length: 10000 }, (_, i) => ({
   id: String(i + 1),
   title: `Post Título Exemplo Número ${i + 1}`,
   content: `Este é o conteúdo detalhado do post número ${i + 1}. Ele foi criado propositalmente com um texto longo para gerar volume de dados e testar a eficiência da rede de forma justa.`,
